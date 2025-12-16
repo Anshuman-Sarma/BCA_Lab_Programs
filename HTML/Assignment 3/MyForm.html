@@ -1,0 +1,67 @@
+<!-- AnshumanSarma_WAP to design a biodata form using HTML form elements -->
+
+
+<!DOCTYPE html>
+<html>
+<head> <title> Bio-data</title>
+<body bgcolor= "lightyellow">
+<h1 align="center"><u><i> Bio-data </i> </u></h1>
+
+<form name="MyForm" method="post">
+<fieldset>
+<legend> Primary Details:-</legend>
+<table border="0">						
+<tr>
+<td><label>Full Name</label></td>
+<td><input type="text" name="t1"><br/></td>
+</tr>
+<tr>
+<td><label>Date of Birth</label></td>
+<td><input type="date" id="DOB" name"DOB"><br/></td>
+</tr>
+<tr>
+<td><label> Address</label></td>
+<td><textarea rows="2" cols="20"></textarea><br/></td>
+</tr>
+<tr>
+<td><label> Gender </label></td>
+<td><input type="radio" name="gender" value="Male" /> Male <input type="radio" name="gender" value="Female" /> Female<br/></td>
+</tr>
+<tr>
+<td><label> Phone/Mobile</label></td> 
+<td><input type="text" name="t2"><br/></td>
+</tr>
+<tr>
+<td><label> State: </label></td>
+<td><input list="states" name="states">					 
+<datalist id="states">
+<option value ="Assam">
+<option value ="Meghalaya">
+<option value ="Manipur">
+<option value ="Mizoram">
+<option value ="Nagaland">
+<option value ="Tripura">
+<option value ="Arunachal Pradesh">
+<option value ="Sikkim">
+</datalist><br/></td>
+</tr>
+<tr>
+<td><label> Degree:- </label></td>
+</tr>
+<tr>
+<td></td><td>Below Class X <input type="checkbox" name="below"/><br>
+Class X pass <input type="checkbox" name="classx"/><br>
+Class XII pass <input type="checkbox" name="classxii"/><br>
+Graduate <input type="checkbox" name="graduate"/><br>
+Post-Graduate <input type="checkbox" name="post-graduate"/><br>
+M-Phil <input type="checkbox" name="m-phil"/><br>
+P.hd <input type="checkbox" name="p.hd"/><br>
+Others <input type="checkbox" name="others"/><br></td>
+</tr>
+</table>
+<center><input type="submit" name="t3" value="Submit"/>
+<input type="reset" name="t4" value="Reset"/></center>
+</fieldset>
+</form>
+</body>
+</html>

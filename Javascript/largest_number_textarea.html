@@ -1,0 +1,51 @@
+<!-- AnshumanSarma_WAP to find sum, average, and largest number from a list -->
+
+
+<html>
+    <head>
+        <title> Largest Number </title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+            function textToArray(n)
+            {
+                var a=n.split('\n');
+                var sum=0;
+                var avg=0;
+                var lar=0;
+                var lar=a[0];
+                for(var i=0;i<a.length;i++)
+                { 
+                 sum=sum+parseInt(a[i]);
+                   if(lar<a[i])
+                     {
+                        lar=a[i];
+                     }
+                } 
+                avg=sum/a.length; 
+         document.write("The sum of the numbers are:"+sum+"</br>");
+         document.write("The average of the given number is:"+avg+"</br>");
+         document.write("The largest number in the array is:"+lar);
+        
+        
+        }
+            
+        </script>
+    </head>
+    <body>
+        <h2> Sum of Numbers</h2>
+        <form name="MyForm">
+            Enter the number:
+            <textarea name="txt" rows="20" cols="20">
+            </textarea>
+                <br/><br/>
+                <input type="button" value="Check" onclick="textToArray(txt.value)">
+                <script>
+                    
+                </script>
+                <input type="reset" >
+                <br/><br/>
+                
+           
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!-- AnshumanSarma_WAP to calculate sum and average of numbers entered in a textarea -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Arithmetic</title>
+    <script type="text/javascript">
+        function textToArray(n)
+        {
+                var a=n.split("\n");
+                var sum=0;
+                var avg=0;
+                for(var i=0;i<=a.length-1;i++)
+                    sum= sum + parseInt(a[i]);
+                avg=sum/a.length;
+                document.MyForm.res0.value=sum;
+                document.MyForm.res1.value=avg;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Sum & Average of Given Numbers</h2>
+    <form name="MyForm">
+        Enter few numbers:
+        <textarea name="txt" rows="4">
+        </textarea>
+        <br/><br/>
+        <input type="button" value="Calculate" onclick="textToArray(txt.value)">
+        <br/><br/>
+        Sum=<input type="text" name="res0"><br/><br/>
+        Average=<input type="text" name="res1">
+        <br/><br/>
+        <input type="reset" value="Reset">
+    </form> 
+
+</body>
+</html>

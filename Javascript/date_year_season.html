@@ -1,0 +1,52 @@
+<!-- AnshumanSarma_WAP to display current date, type of year, and season -->
+
+
+<html>
+
+<head>
+    <title>Check Date</title>
+    <script type="text/javascript">
+        function dates() {
+            var d = new Date();
+            var n = d.getYear();
+            var m = d.getMonth();
+
+            if (n % 2 == 0)
+                document.form.date1.value = "Even Year";
+            else
+                document.form.date1.value = "Odd Year";
+
+            if (m == 0 || m == 1)
+                document.form.date2.value = "Winter Season";
+            else if (m > 1 && m < 5)
+                document.form.date2.value = "Summer Season";
+            else if (m > 4 && m < 9)
+                document.form.date2.value = "Monsoon Season";
+            else
+                document.form.date2.value = "Post Monsoon Season";
+            document.form.date.value = d;
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="form">
+        </br>
+        </br>
+        Today's Date:
+        <textarea name="date" cols="55" readonly>
+        </textarea></br></br></br>
+        Type of Year:
+        <input type="text" name="date1" readonly>
+        </br></br></br>
+        Type of Season:
+        <input type="text" name="date2" readonly>
+        </br></br></br>
+        <input type="button" value="Date" onclick="dates()">
+        <input type="reset" value="Reset">
+</body>
+
+</html>

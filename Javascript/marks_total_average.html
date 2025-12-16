@@ -1,0 +1,40 @@
+<!-- AnshumanSarma_WAP to calculate total and average marks of three subjects -->
+
+
+<html>
+    <head>
+        <title>Calculate Marks</title>
+        <script type="text/javascript">
+            function textToArray(n,m,o)
+            {   
+                var Total= parseInt(n)+parseInt(m)+parseInt(o);
+                var avg;
+                avg=Total/3;
+            document.MyForm.res.value=Total;
+            document.MyForm.res1.value=avg;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h2><u>Total & Average of 3 subjects:-</u></h2><br/><br/>
+        <form name="MyForm">
+            Enter Mathematics Marks:
+            <input type="text" name="txt0"/>
+            </br><br/>
+            Enter English Marks:
+            <input type="text" name="txt1"/>
+            </br><br/>
+            Enter Science Marks:
+            <input type="text" name="txt2"/>
+            </br><br/>
+            <input type="button" value="Calculate" onclick="textToArray(txt0.value,txt1.value,txt2.value)">
+            <br/><br/>
+             Total Marks:<input type="text" name="res">
+            </br><br/>
+             Average Marks:<input type="text" name="res1">
+            <br/><br/>
+            <input type="reset" >
+        </form>
+    </body>
+</html>

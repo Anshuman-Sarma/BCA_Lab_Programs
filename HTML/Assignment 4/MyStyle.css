@@ -1,0 +1,32 @@
+/* AnshumanSarma_WAP to apply external CSS styling to HTML elements */
+
+
+body
+{background-color:lightyellow; 
+}
+ol
+{color:blue; 
+background-color:lightblue;}
+ul
+{color:black; 
+background-color:lightblue;}
+h1
+{
+	text-shadow:2px 2px 2px;
+	font-style:italic;
+	border: 5px dashed red;
+	outline: 4px solid blue;
+}
+table
+{
+	background-color:	lightblue;
+	color: blue;
+	border: 4px dashed blue;
+	width:30%;
+	height:20%;
+	
+}
+tr
+	{
+		text-align:center;
+	}

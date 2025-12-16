@@ -1,0 +1,84 @@
+<!-- AnshumanSarma_WAP to perform various number operations using JavaScript functions -->
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Functions</title>
+        <script type="text/javascript">
+            function factor(n)
+            {
+                var a=parseInt(n);
+                
+                document.write("The Factors of the given numbers are: "+"</br>")
+                for(i=0;i<=n;i++)
+               { 
+                  if(n%i==0)
+                  {
+                    document.write(i+"</br>")
+                  }
+               }
+               document.write("</br>"+"<a href='Functions.html'>"+"BACK"+"</a>");
+            }
+            function sum(n)
+            {
+              var a=parseInt(n);
+              var sum=0;
+              var avg;
+              for(i=0;i<=n;i++)
+               {
+                  sum=sum+i;
+               }
+               avg=sum/n;
+               document.write("Sum of the first N numbers is:"+ sum +"</br>");
+               document.write("Average of the first N numbers is:"+ avg+"</br>");
+               document.write("<a href='Functions.html'>"+"BACK"+"</a>");
+
+            }
+            function multi(n)
+            {
+                var a=n;
+                var mul=0;
+                document.write("Multiplication Table:" +"</br>" )
+                for(var i=1;i<11;i++)
+                {mul=a*i;
+                    
+            document.write( a +"x" + i +"=" +mul + "</br>")
+                  }
+                  document.write("</br>"+"<a href='Functions.html'>"+"BACK"+"</a>");
+            }
+
+            function factorial(n)
+            {
+                var a=parseInt(n);
+                var fact=1;
+                
+                for(i=1;i<=n;i++)
+               { 
+                 fact=fact*i;
+               }
+               document.write("The Factorial of the given numbers is:"+fact);
+               document.write("</br>"+"<a href='Functions.html'>"+"BACK"+"</a>");
+            }
+        </script>
+    </head>
+    <body>
+        <h2>NUMBERS</h2>
+        <form name="MyForm">
+            Enter a number:
+            <input type="text" name="num">
+           
+            <br/><br/>
+            Factors of the given number:
+            <input type="button" value="Check" onclick="factor(num.value)"> <br/><br/>
+            Factorial of the given number:
+            <input type="button" value="Check" onclick="factorial(num.value)"> <br/><br/>
+            Sum and Average of the first n numbers from 1:
+            <input type="button" value="Check" onclick="sum(num.value)"> <br/><br/>
+            Multiplication Table of the given number:
+            <input type="button" value="Check" onclick="multi(num.value)"> <br/><br/>
+          
+           
+        </form>
+    </body>
+</html>
