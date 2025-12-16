@@ -17,37 +17,6 @@ Course : Bachelor of Computer Applications (BCA)
 
 ------------------------------------------------------------
 
-REPOSITORY STRUCTURE
-
-BCA-Programs-
-
-  |-- Assembly
-
-  |-- C
-
-  |-- HTML
-
-  |-- Javascript
-
-  |-- PHP
-
-  |-- Java
-
-  |      |-- books
-
-  |      |-- users
-
-  |      |-- transactions
-
-  |-- Python
-
-  |-- README
-
-Each folder represents a programming language or subject.
-All files contain proper comments explaining the purpose of the program.
-
-------------------------------------------------------------
-
 ASSEMBLY LANGUAGE PROGRAMS
 
 Topics Covered:
