@@ -12,8 +12,11 @@ All programs are written following academic standards and are suitable for:
 
 STUDENT DETAILS
 
-Name   : Anshuman Sarma
-Course : Bachelor of Computer Applications (BCA)
+Name   : Anshuman Sarma, 
+
+Course : Bachelor of Computer Applications (BCA), 
+
+University: Assam Don Bosco University, 2022-2025
 
 ------------------------------------------------------------
 
